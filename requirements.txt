@@ -1,0 +1,20 @@
+# Core (API calls)
+requests>=2.31
+
+# Document scanning (PDF / Excel / Word)
+pdfplumber>=0.11
+openpyxl>=3.1
+python-docx>=1.1
+
+# Optional OCR for images and scanned PDFs.
+# These are only the Python wrappers - the Tesseract OCR program itself must
+# also be installed on the computer (see README). Without it, everything else
+# still works and the app shows a clear message when OCR is needed.
+# Capped below 12: newer Pillow breaks other common tools (e.g. streamlit, gradio)
+# that often share the same Python environment. This app works fine with 10 or 11.
+pillow>=10,<12
+pytesseract>=0.3.10
+numpy>=1.24   # used only to auto-straighten tilted photos before OCR
+
+# Packaging the Windows .exe
+pyinstaller>=6.0
