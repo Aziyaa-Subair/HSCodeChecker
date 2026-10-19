@@ -110,7 +110,4 @@ does not succeed.
 - This tool only automates the portal's **public inquiry search**. No login
   credentials are stored, bypassed, or required.
 
-## License
 
-Specify your license here (e.g. MIT) or mark as proprietary/client-owned if
-this was built as commissioned freelance work.
